@@ -14,6 +14,11 @@ public class HttpLogMatcher {
                 .map(matcher -> matcher.group(1))
                 .map(url -> url.split("/"))
                 .filter(urlParts -> urlParts.length > 1)
-                .map(urlParts -> "/" + urlParts[1]);
+                .map(urlParts -> {
+                    if (urlParts.length == 2) {
+                        return "/";
+                    }
+                    return "/" + urlParts[1];
+                });
     }
 }
