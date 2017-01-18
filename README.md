@@ -71,10 +71,9 @@ I could keep an updated running sum and divide by the Queue size
 ![simple moving average](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e1a8ec9b813571be2b12dfa518c8f3b368b3184)
 
 For top section counts, instead of using
-`com.google.common.collect.TreeMultiset`, I could use both a
-`java.util.HashMap<String, Integer>` to keep section counts. And instead of
-calculating the top section counts on the fly every time
+`com.google.common.collect.TreeMultiset`
 ([see here](https://github.com/julianvmodesto/httplogmon/blob/master/src/main/java/actors/HitsPerSectionActor.java#L34-L36)),
-I could keep a PriorityQueue of the top N sections, and update the
-PriorityQueue when updating section counts.
+I could use both a
+`java.util.HashMap<String, Integer>` (to keep section counts) & a
+PriorityQueue of the top N sections (that's updated with each section count update).
 
