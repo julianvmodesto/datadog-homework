@@ -37,3 +37,4 @@ cat NASA_access_log_Jul95 | pv -L 1k >> access.log
 java -jar target/scala-2.11/httplogmon.jar -f access.log -t 1000
 ```
 
+![running running running](https://github.com/julianvmodesto/datadog-homework/blob/master/example.gif)
