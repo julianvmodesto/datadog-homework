@@ -42,6 +42,12 @@ public class HitsPerSectionActor extends UntypedActor {
                         .forEach(section -> {
                             System.out.printf("%s\t%s%n", hitsPerSection.count(section), section);
                         });
+                System.out.printf("[%s] Rarest Hits by Section:%n", LocalDateTime.now());
+                topSections
+                        .subList(topSections.size() - n, topSections.size())
+                        .forEach(section -> {
+                            System.out.printf("%s\t%s%n", hitsPerSection.count(section), section);
+                        });
             } else {
                 System.out.printf("[%s] No hits logged yet%n", LocalDateTime.now());
             }
