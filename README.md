@@ -59,7 +59,7 @@ Second, I used some higher-level data structures to calculate average hits/secon
 and top seconds. With a bit more work, I could eliminate my dependency on the
 Google Guava library.
 
-For average hits/second, I wanted a data strucutre which would store 120 values
+For average hits/second, I wanted a data structure which would store 120 values
 to represent hits/second across 120 seconds. Instead of using a
 `com.google.common.collect.EvictingQueue` I could use a normal
 `java.util.LinkedList` by popping off the first element once reaching 120
