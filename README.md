@@ -3,6 +3,10 @@ An HTTP log monitor
 
 ### Install
 
+#### Download Binary
+
+[Download the released binary here](https://github.com/julianvmodesto/httplogmon/releases/tag/1.0.0).
+
 #### Build from Source
 
 Prerequisites: Java 8 & sbt. You can [download sbt here](http://www.scala-sbt.org/download.html)
