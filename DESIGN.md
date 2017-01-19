@@ -17,7 +17,7 @@ Google Guava library.
 For average hits/second, I wanted a data structure which would store 120 values
 to represent hits/second across 120 seconds. Instead of using a
 `com.google.common.collect.EvictingQueue` I could use a normal
-`java.util.LinkedList` by popping off the first element once reaching 120
+`java.util.Queue` by popping off the first element once reaching 120
 capacity. Further, instead of calculating the average for this Queue every time
 ([see here](https://github.com/julianvmodesto/httplogmon/blob/master/src/main/java/actors/HitsPerSecondActor.java#L40-L44)),
 I could keep an updated running sum and divide by the Queue size
@@ -30,5 +30,5 @@ For top section counts, instead of using
 ([see here](https://github.com/julianvmodesto/httplogmon/blob/master/src/main/java/actors/HitsPerSectionActor.java#L34-L36)),
 I could use both a
 `java.util.HashMap<String, Integer>` (to keep section counts) & a
-PriorityQueue of the top N sections (that's updated with each section count update).
+`java.util.PriorityQueue<Entry<String, Integer>>` of the top N sections (that's updated with each section count update).
 
