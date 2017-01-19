@@ -21,7 +21,7 @@ to represent hits/second across 120 seconds. Instead of using a
 capacity. Further, instead of calculating the average for this Queue every time
 ([see here](https://github.com/julianvmodesto/httplogmon/blob/master/src/main/java/actors/HitsPerSecondActor.java#L40-L44)),
 I could keep an updated running sum and divide by the Queue size
-[to calculate the simple moving average](https://en.wikipedia.org/wiki/Moving_average#Simple_moving_averag://en.wikipedia.org/wiki/Moving_average#Simple_moving_average).
+[to calculate the simple moving average](https://en.wikipedia.org/wiki/Moving_average#Simple_moving_average).
 
 ![simple moving average](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e1a8ec9b813571be2b12dfa518c8f3b368b3184)
 
