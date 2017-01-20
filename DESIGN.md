@@ -11,7 +11,7 @@ standard library further, or even better, trying this exercise with a language w
 great standard library and light-weight concurrency primitives i.e. Golang.
 
 Second, I used some higher-level data structures to calculate average hits/second
-and top seconds. With a bit more work, I could eliminate my dependency on the
+and top sections. With a bit more work, I could eliminate my dependency on the
 Google Guava library.
 
 For average hits/second, I wanted a data structure which would store 120 values
