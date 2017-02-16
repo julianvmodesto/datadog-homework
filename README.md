@@ -1,5 +1,5 @@
-# httplogmon
-An HTTP log monitor
+# datadog-homework
+An HTTP log monitor for a take-home interview project for Datadog
 
 ### Install
 
@@ -13,8 +13,8 @@ Prerequisites: Java 8 & sbt. You can [download sbt here](http://www.scala-sbt.or
 e.g. `brew install sbt`.
 
 ```
-git clone git@github.com:julianvmodesto/...
-cd ...
+git clone git@github.com:julianvmodesto/datadog-homework.git
+cd datadog-homework
 sbt assembly
 ```
 
